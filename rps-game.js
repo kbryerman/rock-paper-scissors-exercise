@@ -29,7 +29,6 @@ function winner(playerChoice, computerChoice) {
   }
 }
 
-
 // 1. Add your code below these comments.
 // 2. Ensure that your code is ran after the DOM is ready
 // 3. Add Event Listeners to the buttons
@@ -37,3 +36,22 @@ function winner(playerChoice, computerChoice) {
 // 5. Display the players and the computers choice on the webpage
 // 6. Use the function winner to determine the winner and display results on the page
 // 7. Allow the user to play a new game
+
+$ (document).ready( function () {
+  
+$("button").click(function() {
+
+var pressedButton = $(this).text();
+var playerChoice = pressedButton;
+  
+$.get("http://rock-paper-scissors-api.herokuapp.com/", function ( data ) {
+    $("#pieces-played").html("You played "+data+", "+"I played " + pressedButton);
+    $("#game-results").text(winner(playerChoice, data));
+    $("#new-game").show();
+      })
+    .fail(function() {
+        alert("There was an error");
+    });
+});
+  $("#new-game").click(newGame());
+});
