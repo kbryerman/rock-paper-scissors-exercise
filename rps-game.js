@@ -39,7 +39,7 @@ function winner(playerChoice, computerChoice) {
 
 $ (document).ready( function () {
   
-$("button").click(function() {
+$(".btn-primary").click(function() {
 
 var pressedButton = $(this).text();
 var playerChoice = pressedButton;
@@ -53,5 +53,5 @@ $.get("http://rock-paper-scissors-api.herokuapp.com/", function ( data ) {
         alert("There was an error");
     });
 });
-  $("#new-game").click(newGame());
+  $("#new-game").click(newGame);
 });
