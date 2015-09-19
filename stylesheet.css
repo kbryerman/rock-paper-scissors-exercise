@@ -21,6 +21,7 @@ h2, h4{
 button{
 	background: none;
 	border: none;
+	cursor: pointer;
 	font-family: "Source Sans Pro";
 	font-weight: 200;
 	font-size: .85em;
@@ -29,7 +30,6 @@ button{
 }
 
 .rock_container, .paper_container, .scissors_container{
-	cursor: pointer;
 	display: inline-block;
 	width: 60px;
 }
