@@ -37,7 +37,7 @@ var pressedButton = $(this).text();
 var playerChoice = pressedButton;
   
 $.get("http://rock-paper-scissors-api.herokuapp.com/", function ( data ) {
-    $("#pieces-played").html("You played "+data+", "+"I played " + pressedButton);
+    $("#pieces-played").html("You played "+pressedButton+", "+"I played " + data);
     $("#game-results").text(winner(playerChoice, data));
     $("#new-game").show();
       })
