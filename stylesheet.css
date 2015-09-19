@@ -1,0 +1,66 @@
+html{
+	text-align: center;
+}
+
+h2{
+	font-family: "Source Sans Pro";
+	font-weight: 700;
+	font-size: 3em;
+}
+
+h4{
+	font-family: "Source Sans Pro";
+	font-weight: 200;
+	font-size: 1.5em;
+}
+
+h2, h4{
+	margin: 15px;
+}
+
+button{
+	background: none;
+	border: none;
+	font-family: "Source Sans Pro";
+	font-weight: 200;
+	font-size: .85em;
+	text-align: center;
+	outline: 0;
+}
+
+.rock_container, .paper_container, .scissors_container{
+	cursor: pointer;
+	display: inline-block;
+	width: 60px;
+}
+
+.button_container{
+	margin: 60px;
+}
+
+div img{
+	position: relative;
+	margin: auto;
+	background: white;
+	display: block;
+	width: 20px;
+}
+
+#pieces-played{
+	font-family: "Source Sans Pro";
+	font-weight: 200;
+}
+
+#game-results{
+	font-family: "Source Sans Pro";
+	font-weight: 700;
+	font-size: 2em;
+	margin: 15px;
+}
+
+#new-game{
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 120px;
+}

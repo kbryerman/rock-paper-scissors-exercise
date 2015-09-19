@@ -10,32 +10,24 @@ function winner(playerChoice, computerChoice) {
 
   if (playerChoice === "Paper") {
     if (ComputerChoice === "Rock") {
-      return "You win";
+      return "You Win";
     } else if (computerChoice === "Scissors") {
-      return "You lose";
+      return "You Lose";
     }
   } else if (playerChoice === "Scissors") {
     if (computerChoice === "Rock") {
-      return "You lose";
+      return "You Lose";
     } else if (computerChoice === "Paper") {
-      return "You win";
+      return "You Win";
     }
   } else if(playerChoice === "Rock") {
     if (computerChoice === "Paper") {
-      return "You lose";
+      return "You Lose";
     } else if (computerChoice === "Scissors") {
-      return "You win";
+      return "You Win";
     }
   }
 }
-
-// 1. Add your code below these comments.
-// 2. Ensure that your code is ran after the DOM is ready
-// 3. Add Event Listeners to the buttons
-// 4. When the button is pushed use ajax and retrieve the computers choice from http://rock-paper-scissors-api.herokuapp.com/
-// 5. Display the players and the computers choice on the webpage
-// 6. Use the function winner to determine the winner and display results on the page
-// 7. Allow the user to play a new game
 
 $ (document).ready( function () {
   
