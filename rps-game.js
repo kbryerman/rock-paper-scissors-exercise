@@ -9,7 +9,7 @@ function winner(playerChoice, computerChoice) {
     return "Draw";
 
   if (playerChoice === "Paper") {
-    if (ComputerChoice === "Rock") {
+    if (computerChoice === "Rock") {
       return "You Win";
     } else if (computerChoice === "Scissors") {
       return "You Lose";
@@ -37,7 +37,7 @@ var pressedButton = $(this).text();
 var playerChoice = pressedButton;
   
 $.get("http://rock-paper-scissors-api.herokuapp.com/", function ( data ) {
-    $("#pieces-played").html("You played "+pressedButton+", "+"I played " + data);
+    $("#pieces-played").html("You played "+ pressedButton +", "+"I played " + data)
     $("#game-results").text(winner(playerChoice, data));
     $("#new-game").show();
       })
